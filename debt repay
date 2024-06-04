@@ -1,0 +1,22 @@
+//Debt Rupay
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int p,t,r;
+    scanf("%d%d%d",&p,&t,&r);
+    float i=(p*t*r)/100;
+    printf("%.2f\n",i);
+    float a=p+i;
+    printf("%.2f\n",a);
+    float d=i*2/100;
+    printf("%.2f\n",d);
+    float f=a-d;
+    printf("%.2f",f);
+    
+    return 0;
+}
