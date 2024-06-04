@@ -1,0 +1,17 @@
+//Treasure hunter
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output tpbo STDOUT */    
+    int g,b,bb;
+    scanf("%d%d%d",&g,&b,&bb);
+    int bensh=(g*b/100);
+    int bbsh=(g-bensh)*bb/100;
+    int pirsh=(g-bensh-bbsh)/3;
+    printf("%d\n%d\n%d",bensh,bbsh,pirsh);
+    return 0;
+}
