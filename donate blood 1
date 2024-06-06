@@ -1,0 +1,68 @@
+Write a program to check whether the person is eligible to donate blood. Age must be 18 or above. Weight must be 45 or above. Hemoglobin must be 5.5 or above.
+
+Input Format
+
+First input consists of age Second Input consists of weight Third Input consists of hemoglobin level.
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Eligible then display He or She can donate blood Not eligible then display He or She unable to donate blood
+
+Sample Input 0
+
+15
+44
+5.4
+Sample Output 0
+
+He or She unable to donate blood
+
+ 
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+  int main()
+7
+  {
+8
+      int a,w;
+9
+      float h;
+10
+      scanf("%d%d%f",&a,&w,&h);
+11
+      if(a>=18 && w>=45 && h>=5.5)
+12
+      {
+13
+          printf("He or She can donate blood");
+14
+      }
+15
+      else
+16
+      {
+17
+          printf("He or She unable to donate blood");
+18
+      }
+19
+​
+20
+    return 0;
+21
+}
+22
+​
