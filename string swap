@@ -1,0 +1,45 @@
+Read a stirng and convert upper case into lower case and vice versa
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+Print result string
+
+Sample Input 0
+
+Java Language
+Sample Output 0
+
+jAVA lANGUAGE
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    char str[20];
+        int i;
+        scanf("%[^\n]s", str);
+
+        for (i=0;str[i]!='\0';i++)
+        {
+            if(str[i]>=65 && str[i]<=90)
+            {
+                str[i]=str[i]+32;
+            }
+            else if (str[i]>=97 && str[i]<=122)
+            {
+                str[i]=str[i]-32;
+            }
+           printf("%c",str[i]);
+        }
+   return 0;
+}
