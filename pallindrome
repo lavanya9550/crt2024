@@ -1,0 +1,19 @@
+-------------------Find whether number is pallindrome or not-----------------------
+x=int(input())
+temp=x
+rev=0
+while(x>0):
+    rem=x%10
+    rev=rev*10+rem
+    x=x//10
+if(temp==rev):
+    print("Pallindrome")
+else:
+    print("Not a Pallindrome")    
+---------------
+Output:
+1001
+Pallindrome
+
+1002
+Not a Pallindrome
